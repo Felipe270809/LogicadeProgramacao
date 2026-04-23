@@ -1,0 +1,20 @@
+#NOTE: Boletim Escolar
+import os
+os.system("cls")
+
+print("Boletim Escolar")
+
+lista_notas= []
+nome=input("Digite o nome do aluno: ").title()
+curso=input("Digite o curso: ").upper()
+while True:
+ nota=float(input("digite uma nota: "))
+ lista_notas.append(nota)
+ print(lista_notas)
+
+ opcao=input("Deseja adicionar mais notas?(s - sim | n- Não) ")
+ if opcao =="n":
+  break
+
+media= sum(lista_notas)/len(lista_notas)
+print(media)
